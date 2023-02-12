@@ -12,7 +12,8 @@ app.use(cors())
 
 app.use('/categories',require("./routes/Categories"))
 app.use('/requirements',require("./routes/Requirements"))
-app.use("/vacancy",require("./routes/Vacancies"))
+app.use("/vacancies",require("./routes/Vacancies"))
+app.use("/company",require("./routes/Company"))
 
 
 mongoose.connect('mongodb+srv://eltac:eltac123@firstdatabase.x73bvvl.mongodb.net/Jobfind')

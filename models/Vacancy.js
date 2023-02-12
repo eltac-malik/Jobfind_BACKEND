@@ -6,6 +6,7 @@ const vacancySchema = new Schema({
         {requirementId:{type:Schema.Types.ObjectId,ref:"Requirement"}
         }
     ],
+    category:{type:Schema.Types.ObjectId,ref:"Category"}
 })
 
 module.exports = model("Vacancy",vacancySchema)
