@@ -10,6 +10,11 @@ const addCategory = async (req,res)=>{
     res.json({status:200})
 }
 
+const editCategory = async (req,res)=>{
+    await categoryModel.findByIdAndUpdate(req.params.id,{$set:{...req.body}})
+    res.json({status:201})
+}
 
 
-module.exports = {getCategories,addCategory}
+
+module.exports = {getCategories,addCategory,editCategory}

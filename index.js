@@ -11,6 +11,8 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.use('/categories',require("./routes/Categories"))
+app.use('/requirements',require("./routes/Requirements"))
+app.use("/vacancy",require("./routes/Vacancies"))
 
 
 mongoose.connect('mongodb+srv://eltac:eltac123@firstdatabase.x73bvvl.mongodb.net/Jobfind')
